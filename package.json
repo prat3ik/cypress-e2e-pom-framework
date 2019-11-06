@@ -1,0 +1,17 @@
+{
+  "name": "boatim-e2e",
+  "version": "1.0.0",
+  "description": "Boatim e2e automation tests(cypress)",
+  "main": "index.js",
+  "scripts": {
+    "e2e-web": "cypress run",
+    "e2e-web-console": "cypress open"
+  },
+  "author": "prat3ik",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.6.0",
+    "cypress-xpath": "^1.4.0",
+    "mail-listener2-updated": "^0.3.3"
+  }
+}
