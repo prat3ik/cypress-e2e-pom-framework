@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.6.0",
-    "cypress-xpath": "^1.4.0"
+    "cypress-xpath": "^1.4.0",
+    "mail-listener2-updated": "^0.3.3"
   }
 }

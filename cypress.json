@@ -1,5 +1,13 @@
 {
-  "baseUrl": "https://staging.boatim.com",
-  "pageLoadTimeout": 120000,
-  "projectId": "zpm5wa"
+  "baseUrl": "http://localhost:8081",
+  "defaultCommandTimeout": 60000,
+  "pageLoadTimeout": 60000,
+  "responseTimeout": 40000,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "videoUploadOnPasses": false,
+  "env": {
+    "adminUser": "admin",
+    "adminPassword": "admin"
+  }
 }

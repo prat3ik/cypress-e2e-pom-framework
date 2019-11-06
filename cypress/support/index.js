@@ -14,9 +14,22 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-import 'cypress-xpath'
- global.Helper = require('../utils/helper');
+import './commands';
+import 'cypress-xpath';
+
+global.Helper = require('../utils/helper');
+global.faker = require('faker');
 indexedDB.deleteDatabase('firebaseLocalStorageDb');
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+
+Cypress.on('window:before:load', win => {
+ cy.stub(win.console, 'log', msg => {
+  cy.task('log', `console.log --> ${msg}`);
+ });
+ cy.stub(win.console, 'error', msg => {
+  cy.task('log', `console.error --> ${msg}`);
+ });
+});
+
+beforeEach(() => {
+ cy.visit('/');
+});
