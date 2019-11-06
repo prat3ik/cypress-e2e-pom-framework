@@ -1,0 +1,4 @@
+{
+  "baseUrl": "https://staging.boatim.com",
+  "pageLoadTimeout": 120000
+}
