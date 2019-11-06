@@ -1,4 +1,5 @@
 {
   "baseUrl": "https://staging.boatim.com",
-  "pageLoadTimeout": 120000
+  "pageLoadTimeout": 120000,
+  "projectId": "zpm5wa"
 }
